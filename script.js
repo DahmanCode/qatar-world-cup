@@ -17,3 +17,22 @@ buttons.forEach(btn => {
         },700);
     })
 })
+
+// SWIPER
+
+var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+});
+
+// SEARCH BAR
+
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn-search')
+const input = document.querySelector('.input')
+
+btn.addEventListener('click', () => {
+  search.classList.toggle('active')
+  input.focus()
+})
